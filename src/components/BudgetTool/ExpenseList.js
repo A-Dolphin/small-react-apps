@@ -1,20 +1,16 @@
-import React from 'react'
-import * as AiIcons from 'react-icons/ai';
+import React,{ useContext } from 'react'
+import ExpenseItem from './ExpenseItem'
+import { BudgetToolContext } from './context/BudgetToolContext'
 
 const ExpenseList = () => {
+   const {expenses} = useContext(BudgetToolContext);
+
     return (
-        <div className="transactions transactions-expense">
-            <h2>Transaction History</h2>
-            <ul className="transaction-list">
-                <li className="transaction">
-                    <span className="transaction-text">Rent</span>
-                    <span className="transaction-amount">500</span>
-                    <button className="delete-btn">
-                        <AiIcons.AiOutlineClose />
-                    </button>
-                </li>
-            </ul>
-        </div>
+        <ul>
+            {expenses.map(((expense) =>(
+                <ExpenseItem id={expense.id} name={expense.name} cost={expense.cost}/>
+            )))}
+        </ul>
     )
 }
 

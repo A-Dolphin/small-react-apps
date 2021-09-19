@@ -1,7 +1,7 @@
 import React from 'react'
-import CryptoList from '../components/Coin/CryptoList'
+import CryptoList from '../components/CryptoTracker/CryptoList'
 
-function CryptoTracker() {
+function CryptoTrackerPage() {
     return (
         <div className="crypto-tracker-page">
             <CryptoList/>
@@ -9,4 +9,4 @@ function CryptoTracker() {
     )
 }
 
-export default CryptoTracker
+export default CryptoTrackerPage

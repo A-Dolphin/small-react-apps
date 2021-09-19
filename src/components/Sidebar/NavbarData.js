@@ -28,7 +28,7 @@ export const NavbarData = [
     {
         cName : 'nav-text',
         title: 'Crypto Price Tracker',
-        path: '/cryptotracker',
+        path: '/cryptotrackerpage',
         icon: <FaIcons.FaBitcoin/>,
     },
 ]

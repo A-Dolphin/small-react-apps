@@ -1,5 +1,5 @@
 import React from 'react'
-import BudgetTool from '../components/BudgetTool2/BudgetTool'
+import BudgetTool from '../components/BudgetTool/BudgetTool'
 
 function BudgetToolPage() {
     return (
