@@ -1,0 +1,19 @@
+.home-page p {
+    text-align: center;
+    margin: 0 auto 2% auto;
+    width: 45%;
+    line-height: 1.5;
+    font-size:18px
+}
+
+.home-buttons-container{
+    margin: 0 auto;
+    display: flex;
+    width: 55%;
+    flex-wrap: wrap 
+}
+.home-button{
+    margin: 5% auto;
+    font-size: 80px;
+    width: 30%;
+}
